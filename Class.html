@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Our Service</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #ffffff;
+      color: #000000;
+      padding: 16px;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+
+    .subtitle em { font-style: italic; }
+
+    .jumia-link {
+      display: block;
+      color: #1155cc;
+      text-decoration: underline;
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .phone-display {
+      width: 100%;
+      max-width: 370px;
+      height: 200px;
+      display: block;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .form-group { margin-bottom: 14px; }
+
+    label {
+      display: block;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      display: block;
+      width: 230px;
+      padding: 5px 7px;
+      font-size: 14px;
+      border: 1px solid #767676;
+      border-radius: 2px;
+      background: #fff;
+      color: #333;
+      font-family: Arial, sans-serif;
+    }
+
+    input::placeholder {
+      color: #767676;
+      font-size: 14px;
+    }
+
+    .submit-btn {
+      margin-top: 10px;
+      padding: 6px 16px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      border: 1px solid #767676;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover { background: #ddd; }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Our Service</h1>
+
+  <p class="subtitle">We are happy to have you here. <em>Please fill the form below</em></p>
+
+  <a class="jumia-link" href="https://www.jumia.com.ng" target="_blank">Visit Jumia</a>
+
+  <!-- SVG smartphone display matching the image -->
+  <svg class="phone-display" viewBox="0 0 370 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Table surface -->
+    <rect width="370" height="200" fill="#d8d0c8"/>
+    <rect y="155" width="370" height="45" fill="#c0b8a8"/>
+
+    <!-- Phone 1 - back left (large, angled) -->
+    <g transform="translate(10,20) rotate(-8)">
+      <rect width="70" height="120" rx="6" fill="#1a1a1a"/>
+      <rect x="4" y="10" width="62" height="95" rx="3" fill="#3a7bd5"/>
+      <rect x="4" y="10" width="62" height="95" rx="3" fill="url(#screen1)"/>
+      <circle cx="35" cy="116" r="4" fill="#333"/>
+    </g>
+
+    <!-- Phone 2 - large center back -->
+    <g transform="translate(90,10) rotate(4)">
+      <rect width="80" height="138" rx="7" fill="#111"/>
+      <rect x="5" y="12" width="70" height="108" rx="3" fill="#5b3fa0"/>
+      <rect x="5" y="12" width="70" height="108" rx="3" fill="url(#screen2)"/>
+      <circle cx="40" cy="131" r="5" fill="#2a2a2a"/>
+      <rect x="28" y="5" width="24" height="4" rx="2" fill="#333"/>
+    </g>
+
+    <!-- Phone 3 - lying flat center -->
+    <g transform="translate(130,90) rotate(-3)">
+      <rect width="110" height="68" rx="6" fill="#222"/>
+      <rect x="5" y="5" width="100" height="58" rx="3" fill="#1e6ea8"/>
+      <rect x="5" y="5" width="100" height="58" rx="3" fill="url(#screen3)"/>
+    </g>
+
+    <!-- Phone 4 - right standing -->
+    <g transform="translate(250,15) rotate(6)">
+      <rect width="75" height="130" rx="7" fill="#0d0d0d"/>
+      <rect x="5" y="12" width="65" height="100" rx="3" fill="#2d8a4e"/>
+      <rect x="5" y="12" width="65" height="100" rx="3" fill="url(#screen4)"/>
+      <circle cx="37" cy="124" r="5" fill="#2a2a2a"/>
+      <rect x="25" y="5" width="25" height="4" rx="2" fill="#2a2a2a"/>
+    </g>
+
+    <!-- Phone 5 - far right leaning -->
+    <g transform="translate(310,25) rotate(12)">
+      <rect width="58" height="105" rx="6" fill="#1c1c1c"/>
+      <rect x="4" y="9" width="50" height="80" rx="3" fill="#c0392b"/>
+      <rect x="4" y="9" width="50" height="80" rx="3" fill="url(#screen5)"/>
+      <circle cx="29" cy="99" r="4" fill="#333"/>
+    </g>
+
+    <!-- White paper/box under phones -->
+    <rect x="8" y="148" width="200" height="12" rx="2" fill="#f0ece4" opacity="0.8"/>
+    <rect x="30" y="152" width="80" height="6" rx="1" fill="#e0dbd0" opacity="0.6"/>
+
+    <!-- Screen gradient definitions -->
+    <defs>
+      <linearGradient id="screen1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#4a9de0;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#1a5fa0;stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="screen2" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#8e6ccc;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#4a2a80;stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="screen3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#3a9ed0;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#1060a0;stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="screen4" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#50c878;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#1a6a38;stop-opacity:1"/>
+      </linearGradient>
+      <linearGradient id="screen5" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#e05050;stop-opacity:1"/>
+        <stop offset="100%" style="stop-color:#901010;stop-opacity:1"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <h2>Customer Information Form</h2>
+
+  <form>
+    <div class="form-group">
+      <label for="name">Customer Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+    </div>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+</body>
+</html>
